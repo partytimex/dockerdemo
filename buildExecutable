@@ -1,0 +1,7 @@
+cd /
+cd /Users/daowen/phptest
+docker stop helloworld
+docker rm helloworld
+docker build -t hello-world /Users/daowen/phptest/
+docker run -d --name hellowrld -p 8080:80 -v /Users/daowen/phptest/src/:var/www/html hello-world
+
